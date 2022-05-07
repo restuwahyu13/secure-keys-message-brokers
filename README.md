@@ -11,7 +11,7 @@ Berikut adalah tampilan event name di berikan secret key sebagai prefixnya.
 
 ## Image Two
 
-Berikut adalah tampilan ketika kita ingin mengakses subsciber tersebut tetapi event name yang di panggil tidaklah sesuai, maka data tidak akan pernah di subscribe.
+Berikut adalah tampilan ketika kita ingin mengakses publisher dari subscriber, tetapi event name yang di panggil tidaklah sesuai, maka data tidak akan pernah di subscribe.
 
 <img src="/images/4.png">
 <img src="/images/2.png">
@@ -19,7 +19,7 @@ Berikut adalah tampilan ketika kita ingin mengakses subsciber tersebut tetapi ev
 
 ## Image Three
 
-Berikut adalah tampilan ketika kita ingin mengakses subsciber tersebut tetapi event name yang di panggil sesuai, maka data akan berhasil di subscriber.
+Berikut adalah tampilan ketika kita ingin mengakses publisher dari subscriber, tetapi event name yang di panggil sesuai, maka data akan berhasil di subscribe.
 
 <img src="/images/5.png">
 <img src="/images/6.png">
