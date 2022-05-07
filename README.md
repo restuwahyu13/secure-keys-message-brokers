@@ -1,4 +1,4 @@
-# Securing Keys Event
+# [Securing Keys Event](https://github.com/restuwahyu13/node-rabbitmq)
 
 Katakanlah misalkan message brokers yang kita punya itu kena hack dan bisa akses oleh orang yang tidak di kenal (mantan karyawan), mereka tau account username dan password tetapi mereka tidak bisa mengakses dahsboardnya karena port defaultnya sudah diganti dan parahnya si admin lupa ganti username dan password sebelumnya, jadi ketika si orang yang tidak dikenal itu membuat sebuah script untuk mengakses publisher dan si orang yang tidak di kenal tau nama event namenya apa, contoh misalkan `payment:midtrans`, maka si orang tidak di kenal tersebut bisa mengakses setiap transaksi yang masuk melalui message brokers tersebut, tetapi jika event namenya kita berikan secretkey sebagai prefix contoh misalkan `payment:midtrans:${process.env.RABBITMQ_SECRET}`, maka si orang yang tidak di kenal tersebut tidak dapat mengakses event brokers tersebut, dikarenakan si orang tersebut tidak mempunyai secretkey nya, jadi bisa dibilang menjadi sedikit lebih amanlah dari pada tidak menggunakan secretkey sebagai prefixnya.
 
